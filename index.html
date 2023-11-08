@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FastVelocidade Verificação</title>
+    <!-- Adicione os links para os arquivos CSS e JS do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="icon" href="data_icon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Modal de espera -->
+    <div class="modal" id="loadingModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Carregando...</span>
+                    </div>
+                    <p>Por favor, aguarde...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-header bg-dark text-white">
+                        Iniciar Verificação
+                    </div>
+                    <div class="card-body">
+					<form action="lerInternetOnline.php" method="post">
+                        <div class="form-group">
+                            <label for="numero">Cogido ID:</label>
+                            <input type="text" class="form-control" id="dogio_id" name="dogio_id" required placeholder="Digite um número">
+                        </div>
+                        <button class="btn btn-primary">Iniciar</button>
+                    </div>
+					</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
